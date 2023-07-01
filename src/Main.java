@@ -1,7 +1,7 @@
 
 
 public class Main {
-    private static String palindrom="kajak";
+    private static String palindrom="Kajak";
     public static void main(String[] args) {
         boolean palindrome = isPalindrome(palindrom);
         System.out.println(palindrome);
@@ -12,7 +12,7 @@ public class Main {
         for (int i = word.length()-1; i >=0 ; i--) {
             str.append(word.charAt(i));
         }
-       return word.equals(str.toString());
+       return word.equalsIgnoreCase(str.toString());
    }
 
 }
